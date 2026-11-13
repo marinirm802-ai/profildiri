@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil - carissa</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Reset & Styling Dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigasi */
+        header {
+            background: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: #2c3e50;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #cf1a1a;
+        }
+
+        /* Hero / Bagian Utama */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #d71229, #2c3e50);
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+            margin-top: 60px;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ffffff;
+            color: #2c3e50;
+            padding: 10px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .btn:hover {
+            background: #2c3e50;
+            color: white;
+        }
+
+        /* Section Umum */
+        section {
+            padding: 80px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+            color: #2c3e50;
+        }
+
+        /* Tentang Saya */
+        .about-card {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .about-card p {
+            margin-bottom: 15px;
+            color: #666;
+        }
+
+        /* Keahlian (Skills) */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-item {
+            background: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            font-weight: 600;
+            color: #3498db;
+        }
+
+        /* Kontak */
+        .contact-content {
+            text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .contact-content p {
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        /* Responsif */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigasi -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">PortofolioKu</div>
+            <ul class="nav-links">
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#skills">Keahlian</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Bagian Utama (Hero) -->
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Halo, Saya carissa </div/h1>
+        
+
+
+            <a href="#about" class="btn">Kenali</a>
+        </div>
+    </div>
+
+    <!-- Tentang Saya -->
+    <section id="about">
+        <h2>Tentang Saya</h2>
+        <img src="carissa.jpg" alt="Foto Profil Saya" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+        <div class="about-card">
+            <p>Halo!saya carissa safa apriliani, Saya adalah seorang yang memiliki ketertarikan besar di bidang teknologi, pemrograman, dan desain web.</p>
+            <p>Website ini saya buat menggunakan HTML dan CSS di Visual Studio Code sebagai langkah awal untuk membagikan informasi mengenai latar belakang, kemampuan, dan proyek yang saya kerjakan.</p>
+            <p>Saya selalu bersemangat untuk mempelajari hal-hal baru dan mengembangkan diri di industri digital.</p>
+        </div>
+    </section>
+
+    <!-- Keahlian -->
+    <section id="skills">
+        <h2>Keahlian Saya</h2>
+        <div class="skills-grid">
+            <div class="skill-item">HTML5 & CSS3</div>
+            <div class="skill-item">JavaScript Dasar</div>
+            <div class="skill-item">Visual Studio Code</div>
+            <div class="skill-item">Desain Responsif</div>
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="contact">
+        <h2>Hubungi Saya</h2>
+        <div class="contact-content">
+            <p>Tertarik untuk berkolaborasi atau ingin mengenal saya lebih lanjut? Silakan hubungi melalui email di bawah ini:</p>
+            <a href="mailto:carissaaasafaa@gmail.com" class="btn">Kirim Email</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 carissa. Dibuat dengan ❤️ di Visual Studio Code.</p>
+    </footer>
+
+</body>
+</html>
